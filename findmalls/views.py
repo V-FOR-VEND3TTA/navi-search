@@ -5,8 +5,8 @@ import folium
 def index(request):
     # Create a map object
     m = folium.Map()
-    m = m._r_repr_html_()
+    m = m._repr_html_()
     context = {
-        
+        'm': m,
     }
-    return render(request, 'index.html') 
+    return render(request, 'index.html',  context) 

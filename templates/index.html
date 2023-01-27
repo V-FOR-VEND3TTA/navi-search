@@ -54,7 +54,8 @@
     <div class="container">
         <div class="row mt-4">
             <div class="col md-10 offset-md-1">
-                {{}}
+              <!-- Tells Django that the source of the HTML is safe -->  
+              {{ m | safe }}
             </div>
         </div>
     </div>
