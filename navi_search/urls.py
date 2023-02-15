@@ -21,3 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', map_views.index, name='index'),
 ]
+
+handler404 = 'findmalls.views.error_404'
